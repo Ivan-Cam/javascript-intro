@@ -10,8 +10,7 @@ const heroes = [{
     id: 2,
     name: 'Superman'
 }];
-heroes.filter
 
-const exist = (heroes) => heroes.filter((heroe)=>{heroe.id === 1})
+const exist = (heroes) => heroes.filter((heroe)=> heroe.id === 1 )
     
 console.log(exist(heroes)) 
