@@ -3,14 +3,19 @@ const getUser = () => ({
   username: "Tony",
 });
 
-const heroes = [{
+const heroes = [
+  {
     id: 1,
-    name: 'Batman'
-},{
+    name: "Batman",
+  },
+  {
     id: 2,
-    name: 'Superman'
-}];
+    name: "Superman",
+  },
+];
 
-const exist = (heroes) => heroes.filter((heroe)=> heroe.id === 1 )
-    
-console.log(exist(heroes)) 
+// const existe = heroes.some((heroe) => heroe.id === 1);
+// const existe = heroes.filter((heroe) => heroe.id === 1);
+const { name } = heroes.find((heroe) => heroe.id === 1);
+
+console.log( name );
